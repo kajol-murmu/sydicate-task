@@ -1,0 +1,4 @@
+2025-03-07 18:25:06,905 [INFO] USER:kajol_murmu generate.py:72:project LOG: Project name: task01
+2025-03-07 18:25:06,906 [INFO] USER:kajol_murmu generate.py:79:project LOG: Project path: C:\Users\kajol_murmu\Desktop\EPAM-tasks\sydicate-task
+2025-03-07 18:25:06,920 [INFO] USER:kajol_murmu project.py:77:generate_project_structure LOG: Project task01 folder has been successfully created.
+2025-03-07 18:25:06,920 [INFO] USER:kajol_murmu helper.py:330:timed LOG: Stage project, elapsed time: 0:00:00.015106
