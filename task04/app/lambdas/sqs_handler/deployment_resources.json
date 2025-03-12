@@ -1,24 +1,18 @@
 {
   "sqs_handler-role": {
-    "predefined_policies": [],
+    "predefined_policies": [
+      "AWSLambdaBasicExecutionRole"
+    ],
     "principal_service": "lambda",
     "custom_policies": [
       {
-        "PolicyName": "lambda-basic-execution",
-        "PolicyDocument": {
-          "Version": "2012-10-17",
-          "Statement": [
-            {
-              "Effect": "Allow",
-              "Action": [
-                "sqs:ReceiveMessage",
-                "sqs:DeleteMessage",
-                "sqs:GetQueueAttributes"
-              ],
-              "Resource": "*"
-            }
-          ]
-        }
+        "Effect": "Allow",
+        "Action": [
+          "sqs:ReceiveMessage",
+          "sqs:DeleteMessage",
+          "sqs:GetQueueAttributes"
+        ],
+        "Resource": "*"
       }
     ],
     "resource_type": "iam_role",
