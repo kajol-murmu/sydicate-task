@@ -2,16 +2,15 @@
   "sqs_handler-role": {
     "predefined_policies": [],
     "principal_service": "lambda",
-    "custom_policies": [{
-      "lambda-basic-execution":[
-         "sqs:ReceiveMessage",
-        "sqs:DeleteMessage",
-        "sqs:GetQueueAttributes"
-      ]
-    }
-      
-      
-        
+    "custom_policies": [
+      {
+        "policy_name": "lambda-basic-execution",
+        "actions": [
+          "sqs:ReceiveMessage",
+          "sqs:DeleteMessage",
+          "sqs:GetQueueAttributes"
+        ]
+      }
     ],
     "resource_type": "iam_role",
     "tags": {}
