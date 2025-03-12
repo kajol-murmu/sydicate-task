@@ -1,18 +1,14 @@
 {
   "sqs_handler-role": {
-    "predefined_policies": [
-      "AWSLambdaBasicExecutionRole"
-    ],
+    "predefined_policies": [],
     "principal_service": "lambda",
     "custom_policies": [
       {
-        "Effect": "Allow",
-        "Action": [
-          "sqs:ReceiveMessage",
-          "sqs:DeleteMessage",
-          "sqs:GetQueueAttributes"
-        ],
-        "Resource": "*"
+        "lambda-basic-execution":[
+        "sqs:ReceiveMessage",
+        "sqs:DeleteMessage",
+        "sqs:GetQueueAttributes"
+        ]
       }
     ],
     "resource_type": "iam_role",
